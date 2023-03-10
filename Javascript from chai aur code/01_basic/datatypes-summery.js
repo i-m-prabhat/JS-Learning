@@ -46,3 +46,29 @@ console.log(typeof scoreValue); // number
 
 console.log(typeof heros)
 console.log(typeof myObj)
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Memory in Js 
+
+//  Stack (Primitive), Heap (Non-Primitive)
+
+let name = "king"
+
+let anothername = name;
+anothername = "kohli"
+
+console.log(name)
+console.log(anothername)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@apl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "prabhat@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
