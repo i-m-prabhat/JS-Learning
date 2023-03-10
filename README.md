@@ -24,3 +24,15 @@ Data types in JavaScript are two types. <br/><br/>
 
 Stack memory(Primitive data type) <br/>
 Heap (Non-Primitive data type)
+
+
+## How to generate four digit random number
+to using following code
+
+```
+const min = 1000
+const max = 9999
+
+console.log(Math.floor(Math.random() * (max - min + 1))+min) // we can also use this for otp
+
+```
