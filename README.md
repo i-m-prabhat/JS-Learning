@@ -19,3 +19,8 @@ Data types in JavaScript are two types. <br/><br/>
     Array, Objects, Functions
     
  ```
+ 
+ ## Memory in Js 
+
+Stack memory(Primitive data type) <br/>
+Heap (Non-Primitive data type)
