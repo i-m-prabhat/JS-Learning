@@ -1,11 +1,10 @@
 /* data types in js
-On the basis of How data stored in memory and how data will be access from memry
+On the basis of How data stored in memory and how data will be access from memory
 Data types in JavaScript are two types.
 
 1. Primitive DataTypes
 
     7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
-
 
 
 2. Non Primitive/Reference Datatypes
@@ -31,17 +30,18 @@ const bigNumber = 34564581541244545n
 
 const heros = ["shaktiman", "naagraj", "doga"]
 
-let myObj ={
+let myObj = {
     name: "prabhat",
     age: 21,
 }
 
-const myFunction = function(){
+const myFunction = function ()
+{
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber); //bigInt
-console.log(typeof outsideTemp); // null > object
+console.log(typeof bigNumber);//bigInt
+console.log(typeof outsideTemp);// null > object
 console.log(typeof scoreValue); // number
 
 console.log(typeof heros)

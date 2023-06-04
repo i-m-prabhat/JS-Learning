@@ -24,14 +24,14 @@ console.log(Math.abs(-4));
 console.log(Math.round(4.6));
 console.log(Math.ceil(4.2));
 console.log(Math.floor(4.9));
-console.log(Math.min(4,3,6,8));
-console.log(Math.max(4,6,7,8,9,7,5));
+console.log(Math.min(4, 3, 6, 8));
+console.log(Math.max(4, 6, 7, 8, 9, 7, 5));
 
 console.log(Math.random());
-console.log((Math.random()*10)+1);
-console.log(Math.floor(Math.random()*10)+1);
+console.log((Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
 
 const min = 1000
 const max = 9999
 
-console.log(Math.floor(Math.random() * (max - min + 1))+min) // we can use this for otp
+console.log(Math.floor(Math.random() * (max - min + 1)) + min) // we can use this for otp

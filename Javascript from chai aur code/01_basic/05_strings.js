@@ -24,12 +24,12 @@ console.log(gameName.charAt(2))
 console.log(gameName.indexOf('t'))
 
 
-const newString = gameName.substring(0,4)
+const newString = gameName.substring(0, 4)
 
 console.log("***********************************************")
 console.log(newString)
 
-const anotherString = gameName.slice(-8,4)
+const anotherString = gameName.slice(-8, 4)
 console.log(anotherString)
 
 const newStringOne = "  prabhat   "
@@ -44,3 +44,7 @@ console.log(url.includes('patel'))
 console.log(url.includes('patelG'))
 
 console.log(gameName.split('-'))
+
+let string = "Hello";
+console.log(string.split(""));
+console.log(string.split("")[1]);
