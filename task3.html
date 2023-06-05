@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #212121;
+                color: #fff;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        ONFOCUS <br /><input onfocus="demo()" type="text" id="t1"> <br />
+        <p id="p1"></p>
+        ONBLUR <br /><input onblur="demo()" type="text" id="t2">
+        <p id="p2"></p>
+        <script>
+            let demo = () =>
+            {
+                let t1 = document.getElementById("t1");
+                let t2 = document.getElementById("t2");
+                let p1 = document.getElementById("p1");
+                let p2 = document.getElementById("p2");
+                p1.innerText = t1.value;
+                p2.innerText = t2.value;
+
+            }
+        </script>
+    </body>
+
+</html>

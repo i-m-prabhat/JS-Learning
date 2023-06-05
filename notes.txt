@@ -1,0 +1,45 @@
+setTimeout
+==========
+setTimeout is used to execute a group of statement once after given time interval.
+
+setTimeout function is located in window object.
+
+syntax:
+window.setTimeout(functionName,time in milisecond)
+window.setTimeout("functionName()",time in milisecond)
+
+Event
+======
+Event is a mouse/keyboard action that is perform by user.
+
+Event Handling 
+***************
+Event handling is a process of adding function with HTML Element(Tags).
+
+Example
+********
+onload
+onclick
+ondblclick
+onfocus
+onblur
+onkeyup
+onkeypress
+oncopy
+onpaste
+oncut
+oncontextmenu
+onmouseover
+onmouseleave
+etc.....
+
+
+Syntax:
+************
+function myfun(){
+    // statement
+   // statement
+}
+
+<tagname event="myfun()"></tagname>
+

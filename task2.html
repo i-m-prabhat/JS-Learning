@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration & Login form</title>
+        <style>
+            body {
+                background-color: #212121;
+                color: #fff;
+            }
+
+            #login-form {
+                display: none;
+                width: 300px;
+                height: 400px;
+                margin: 50px auto;
+                background-color: red;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            #register-form {
+                width: 300px;
+                height: 400px;
+                margin: 50px auto;
+                background-color: red;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            input {
+                border: 1px solid grey;
+                width: 95%;
+                height: 25px;
+                /* background-color: #fff; */
+                margin: 5px;
+            }
+
+            .btn {
+                background-color: rgb(0, 255, 106);
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            #reg,
+            #login {
+                background-color: blue;
+                text-align: center;
+                color: #fff;
+                padding: 8px;
+                border: none;
+                border-radius: 7px;
+            }
+
+            #reg:focus,
+            #login:focus {
+                background-color: #fff;
+                color: blue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="register-form">
+            <p>
+            <h2>Register here</h2>
+            </p>
+            <p>
+                <input type="text" placeholder="Enter Your Name">
+            </p>
+            <p>
+                <input type="email" placeholder="Enter Your Email">
+            </p>
+            <p>
+                <input type="email" placeholder="Create Your Password">
+            </p>
+
+            <input class="btn" type="button" value="Register">
+
+            <p>Already have an Account <button id="login">Login now</button></p>
+
+        </div>
+        <div id="login-form">
+            <p>
+            <h2>Login here</h2>
+            </p>
+            <p>
+                <input type="email" placeholder="Enter Your Email">
+            </p>
+            <p>
+                <input type="email" placeholder="Enter Your Password">
+            </p>
+            <p>
+            <p><input class="btn" type="button" value="Login"></p>
+            </p>
+            <p>Don't have an Account <button id="reg">Register now</button>
+            </p>
+        </div>
+        <script>
+            let reg = document.getElementById("register-form")
+            let login = document.getElementById("login-form")
+            let regbtn = document.getElementById("reg")
+            let loginbtn = document.getElementById("login")
+            loginbtn.addEventListener("click", () =>
+            {
+                reg.style.display = "none"
+                login.style.display = "block"
+            })
+            regbtn.addEventListener("click", () =>
+            {
+                login.style.display = "none"
+                reg.style.display = "block"
+            })
+        </script>
+    </body>
+
+</html>

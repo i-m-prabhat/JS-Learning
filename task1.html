@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Slider</title>
+        <style>
+            * {
+                background-color: #212121;
+                color: #fff;
+            }
+
+            img {
+                height: 500px;
+                /* width: 1000px; */
+            }
+
+        </style>
+    </head>
+
+    <body onload="slider()">
+        <center>
+            <h1>Image Changer</h1>
+            <!-- <hr /> -->
+            <img src="./images/d.png" alt="">
+        </center>
+        <script>
+            let imgArr = ["a.jpg", "b.jpg", "c.png", "d.png"];
+            let i = 0;
+            const slider = () =>
+            {
+                let img = document.querySelector("img");
+                img.src = `./images/${imgArr[i]}`;
+                i++;
+                if (i === imgArr.length)
+                {
+                    i = 0;
+                }
+                setTimeout(slider, 3000)
+            }
+            // slider()
+            // setInterval(slider, 2000);
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #212121;
+                color: #fff;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        Pincode <input onblur="pin()" type="number">
+        <p></p>
+        <script>
+            let pin = () =>
+            {
+                let pin = document.querySelector("input");
+                let para = document.querySelector("p");
+
+                if (pin.value.length == 6)
+                {
+                    pin.style.border = "3px solid green";
+                    para.innerText = `Valid pin, Your Pincode is ${pin.value}`;
+                    para.style.color = "green";
+                } else
+                {
+                    pin.style.border = "3px solid red";
+                    para.innerText = `Invalid Pin`;
+                    para.style.color = "red";
+                }
+            }
+        </script>
+    </body>
+
+</html>
