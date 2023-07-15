@@ -1,0 +1,985 @@
+1.Client Side 
+==============
+=>
+HTML
+CSS
+JS
+JQUERY
+BOOTSTRAP
+React JS
+Angular Js 
+Vue JS
+etc.
+2. Server Side
+===============
+=>
+C#
+JAVA
+PHP
+Node-jS
+Express
+Python
+etc.
+3. Database language
+======================
+=>
+int a
+float a
+string a   =>Statically Typed || Strictly Typed
+boolean a
+
+a=10
+a=20.6
+a=true    => Loosely Typed  || Dynamically Typed
+a='RAM'
+===============================
+alert()
+=======
+
+Way to write code of JavaScript
+-------------------------------
+1. Internal JavaScript
+<script>
+alert("Welcome to JavaScript")
+</script>
+2. External JS
+
+console.log()=>
+============
+=>it is used to display output browser console.
+
+<script>
+console.log("Welcome to Techpile");
+</script>
+=============
+var x
+
+ES6 let const 
+
+ECMA is a standard to writing code..
+=====================================
+prompt()=>prompt function is used to take input on runtime.
+=>prompt function is defined in window.
+=>window object is primary object of javascript.
+=>return type of prompt function is string.
+Ok => return value
+cancel => null
+=================================
+objectname.member
+
+object=> object is the collection of property(variable) and methods (function).
+
+variable,function => member of object
+
+//var obj={key:value,key:value}
+
+members of window object
+-------------------------
+prompt()
+alert()
+confirm()
+location
+open()
+print()
+play()
+pause()
+setInterval()
+setTimeout()
+clearInterval()
+=============
+
+setTimeout()
+clearInterval()
+etc.
+-----------
+Syntax
+-------
+window.prompt("FieldName","Placeholder");
+
+var name=window.prompt("Name","Enter Your Name...")//10
+
+==================================
+getElementById()
+getElementsByTagName()
+getElementsByClassName()
+querySelector()
+querySelectorAll()
+==================================
+getElementById()
+================
+=>getElementById function is used to select html element on the basis of HTML Id.
+=>getElementById function is defined in document object.
+=>document object is the built-in object of DOM.
+=>return type of getElementById function is current object.
+
+Syntax
+------
+document.getElementById("IdOfHTMLElement")
+
+Exa:
+----
+<h1 id="h">TECHPILE TECHNOLOGY</h1>
+document.getElementById("h")
+
+Step to apply CSS with JavaScript.
+==================================
+object.style.propertyName="value"
+
+//document.getElementById("h").style.color="red"
+var x=document.getElementById("h")
+x.style.color="RED"
+x.style.background="aqua"
+x.style.borderRadius="10px"
+======================================
+
+value
+======
+=>value property is used to set/get value of selected form control.(input, textarea,button,select,datalist,etc.)
+=>return type value property is string.
+get
+---
+var x=HTMLOBJECT.value
+var x=document.getElementById("idofFormControl").value//
+
+Exa:
+<input type="Text" id="txt"/>//TECHPILE
+<input type="button" value="GET VALUE"/>
+
+
+SET
+---
+objectname.value="RAM"
+=================================
+querySelector
+==============
+=>
+querySelector is used to select first matches of element of given selector(ID,class,tag,group selector).
+=> it is defined in document object.
+
+Syntax
+-------
+document.querySelector("CSSSelector")
+Exa:
+<p>HTML</p>
+<p>CSS</p>
+<p>JS</p>
+<input class="txt" type="text"/>
+<input class="txt" type="text"/>
+
+
+document.querySelector("p")  //First Para
+document.querySelector(".txt")  //First input
+document.querySelector(".txt").value  //First input
+
+==========================
+innerText
+==========
+<p id="p1">TECHPILE</p>
+<p id="p2">HCL</p>
+get
+===
+var x=document.querySelector("#p1").innerText
+set
+===
+document.querySelector("#p2").innerText=x
+
+<img src="a.jpg" id="img1"/>
+<img src="b.jpg" id="img2"/>
+
+confirm
+-------
+=>confirm box is used to take user confirmation. it has two buttons
+cancel => false
+ok  => true.
+=>confirm is defined in window
+
+Syntax
+=======
+window.confirm("Message")
+confirm("Message")
+======================
+setInterval
+===========
+=>setInterval function is used to execute a group of statement for every given time interval.
+=>setInterval function is defined in window.
+Exa:
+----
+Syntax 1
+window.setInterval(functionname,time in millisecond)
+setInterval(functionname,time in millisecond)
+
+setInterval("functionname()",time in millisecond)
+
+function demo()
+{
+alert("OK")
+}
+
+window.setInterval("demo()",5000)
+=================================
+setTimeout()
+===========
+setTimeout function is used execute once a group of statement after given time interval.
+
+window.setTimeout(functionname,time in millisecond)
+setTimeout(functionname,time in millisecond)
+
+setTimeout("functionname()",time in millisecond)
+
+function demo()
+{
+alert("OK")
+}
+===============================
+array in JavaScript
+=====================
+
+In JavaScript array is collection of heterogeneous data types element.
+
+=>indexing of array is starts from 0 and last index is n-1 where n is length of array.
+
+Syntax 1
+=========
+var arrayName=[item1,item2,item3......itemN]
+Exa:
+var EmpInfo=["RAM",30,20000.5,true]
+How to access element of array
+===========================
+EmpInfo[0]//RAM
+EmpInfo[1]//20
+EmpInfo[2]//20000.5
+EmpInfo[4]//true
+EmpInfo[5]//undefined
+
+===================================
+Syntax 2
+===================================
+var arrName=new Array(item1,item2,item3,....itemN)
+
+var courseList=new Array("HTML","CSS","JS","JQUERY")
+
+<script>
+var courseList=new Array("HTML","CSS","JS","JQUERY","BS","REACT JS","EJS")
+for(var i=0;i<courseList.length;i++)
+{
+alert(courseList[i])
+}
+
+==========================
+for ...in loop
+for..of loop
+
+var arrName=new Array(item1,item2,item3,....itemN)
+
+alert("ok")
+
+If we want to execute a group of statement for every element present in given collection then we have to for.. in or for ..of loop.
+============
+for..of loop
+============
+Syntax
+======
+name="RAM"
+for(var variable of collection)
+{
+statement
+statement
+statement
+statement
+}
+
+
+
+
+
+
+
+
+</script>
+
+=======================
+Function in JavaScript
+=======================
+=>Function is block of re-usable code which used to perform particular task.
+=>The block of code will be executed when user calls(invoke) it.
+
+Type Of Function
+=================
+1. Built-in Function | Pre-defined Function
+============================================
+The function which are defined in system client are known as Built-in Function.
+
+Exa:
+----
+setInterval
+setTimeout
+alert()
+prompt()
+write()
+etc.
+
+2. User Defined Function (UDF)
+=>The functions which are defined by user based on our business requirement are known as UDF.
+
+Syntax
+======
+function functionname()
+{
+statement
+statement
+statement
+}
+
+Calling of Function
+===================
+functionname()  //Onload   => Onload="functionname()" 
+
+In JavaScript multiple events are used to handle calling of function.
+
+onclick event
+ondblclick
+onchange
+onfocus
+onblur
+onmouserover
+onmouseleave
+onkeypress
+onkeyup
+etc.
+
+ES6 =>2015 
+==========
+Arrow function In ES6
+
+var demo=()=>  //Arrow function  Without parameter
+{
+statement
+statement
+statement
+}
+
+Function with Parameter
+=======================
+Exa:
+function demo(param1,param2,...paramN)
+{
+statement
+statement
+statement
+}
+
+Parameter
+=========
+=>Parameter provides input to the function. 
+=>At time of calling of function compulsory we have to provide value to that parameter otherwise we will get error.
+
+function demo(x,y)   //x,y are formal argument
+{
+alert(`Sum is : ${x+y}`)
+}
+
+demo(10,30)// 10,30 are actual argument
+
+Arrow function with parameter
+=============================
+let demo=(x,y)=>   //x,y are formal argument
+{
+alert(`Sum is : ${x+y}`)
+}
+
+demo(10,30)// 10,30 are actual argument
+ 
+==================================
+Function with Default Parameter
+================================
+let demo=(x=20,y=30)=>   //x,y are formal argument
+{
+alert(`Sum is : ${x+y}`)
+}
+
+demo()
+
+let demo=(...x)=>     //...x rest operator
+{
+alert(x)
+}
+
+demo(10)  // x=[10]
+demo(20,30)// x=[20,30]
+demo(20,30,30)//x=[20,30,30]
+demo(20,30,40,50)//x=[20,30,40,50]
+demo(20,30,40,50,60)// x=[20,30,40,50,60]
+
+
+function demo(x,y,...z)
+{
+alert(x)
+alert(y)
+alert(z)
+}
+demo(10,20,30)
+demo(10,20,30,40)
+demo(10,20,30,40,50)
+======================================
+this
+==>
+this keyword is used to select current object of HTML element.
+
+======================================
+Anonymous Function
+====================================
+The function which have no any name is known as anonymous function
+
+Syntax
+======
+function()
+{
+statement
+statement
+statement
+statement
+}
+
+callback => function  within function
+
+========================
+function demo()
+{
+alert("ok")
+}
+
+setInterval(demo,1000)
+
+window.setInterval(function(){
+alert("OK")
+},5000)
+
+
+Anonymous arrow function
+=========================
+function()
+{
+statement
+statement
+statement
+}
+
+()=>
+{
+statement
+statement
+statement
+}
+
+window.setInterval(()=>{
+alert("OK")
+},5000)
+
+forEach()
+========
+=>forEach function is used to execute a group of statement for every element present in array.
+=>forEach will not execute if array is empty.
+
+Syntax
+=======
+arr=["HTML","CSS","JS","JQUERY"]
+arrayName.forEach(functionName)
+
+function functionName(current,index,arrName)
+{
+statement
+}
+
+anonymous function
+==================
+arr.forEach(function(data,i,arr){
+statement
+statement
+})
+arr=["HTML","CSS","JS","JQUERY"]
+arr.forEach((data,i,arr)=>{
+
+})
+
+Date object
+===========
+=>Date is object providing some methods related date and time.
+Syntax
+======
+var d=new Date()
+d.getHours() => 1-24
+d.getMinutes() => 1-60
+d.getSeconds()  =1-60
+d.getMilliseconds() => 0-999
+d.getDate()  => 5
+d.getMonth() 0-11  
+d.getFullYear()    2022
+d.getDay()   0-6
+d.toLocaleTimeString()  =>11:40 AM/PM
+d.toLocaleDateString() =>  mm/dd/yyyy  => 12/5/2022
+etc..
+
+clearInterval()
+===============
+clearInterval function is used to stop functionality of setInterval.
+
+function demo()
+{
+statement
+}
+
+var a=window.setInterval(demo,1000)
+
+window.clearInerval(a)
+======================
+HTMLCollection=>HTML-Collection is just like array but element of HTMLCollection can be access by index only.
+
+item
+length
+namedItem("abc")  => id=abc
+
+NodeList
+==========
+NodeList is just like HTMLCollection but it's has own function like entries,values,forEach,key,item.
+
+getElementsByClassName
+======================
+getElementsByClassName is used to return HTMLCollection with specified className.
+
+<p class="abc">PARA1</p>
+<p id="a" class="abc">PARA2</p>
+<p class="abc">PARA3</p>
+<p class="abc">PARA4</p>
+
+var x=document.getElementsByClassName("abc")
+
+getElementsByTagName()
+======================
+getElementsByTagName function is used to return HTMLCollection with specified tagName.
+
+
+<p class="abc">PARA1</p>
+<p id="a" class="abc">PARA2</p>
+<p class="abc">PARA3</p>
+<p id="box" class="abc">PARA4</p>
+
+var x=document.getElementsByTagName("p")// x=object HTMLCollection
+var x=document.getElementsByTagName("p").namedItem("box").innerText
+
+alert(x)//PARA4
+
+=========================
+document.title
+document.images    =>HTMLCollection
+document.head
+document.body
+
+=====================
+location
+=========
+location property is used to redirect location.
+=>location is defined in window
+window.location="https://techpile.in/st"
+
+open()
+======
+open function is used to open URL on new tab or new window.
+
+window.open("url","_blank","height=value,width=value")
+
+exa:
+window.open("https://www.techpile.in","_blank","height=600,width=400")
+==============================
+print()
+============================
+querySelectorAll()
+==================
+=>querySelectorAll return nodeList with specified selector Name.
+
+<p>HTML</p>
+<p id="b">CSS</p>
+<p class="a">JS</p>
+<p class="a">JQUERY</p>
+
+document.querySelectorAll("p")
+document.querySelectorAll("#b")
+document.querySelectorAll(".a")
+=================================
+var x=document.querySelectorAll("p") //nodeList
+
+getElementsByName
+=================
+=>getElementsByName is used to return NodeList with specified name
+
+<p name="a">PARA1</p>
+<p name="b">PARA1</p>
+<p name="a">PARA1</p>
+<p name="a">PARA1</p>
+<p name="b">PARA1</p>
+
+document.getElementsByName("a")// p1,p3,p4 
+
+==========================================
+setAttribute
+============
+setAttribute function is used to set attribute of selected HTML Element.
+
+Syntax
+======
+var element=document.querySelector("selector")
+element.setAttribute("attributename","value")
+
+getAttribute()
+==============
+it is used to get attribute value of selected HTML element.
+
+<img src="images/a.jpg"/>
+var x=document.querySelector("img").getAttribute("src")
+
+
+x=images/a.jpg
+
+============================
+hasAttribute
+=============
+it returns true if specified attribute exist on selected HTML element otherwise it returns false..
+
+<h2 id="box">HTML</h2>
+<script>
+document.querySelector("h2").hasAttribute("class")//false
+document.querySelector("h2").hasAttribute("id")//true
+</script>
+
+hasAttributes
+==============
+=>It returns false if selected HTML element have no attribute otherwise it returns true.
+
+var x=document.querySelector("h2").hasAttributes()//false
+alert(x)
+
+Math
+=====
+=>Math is a object providing some property(variable) and method(function) related to mathematical operation.
+
+CONSTANT VALUE
+--------------
+PI
+LN2  => natural logarithm of 2 base e   
+LN10  => natural logarithm of 10 base e
+------
+random()  =>
+=======
+=>random function is used to return random number between 0(including) to 1 (excluding)
+floor()
+ceil()
+round()
+min()   min(1,24,5,6,3,2,4)// 1
+max()    
+sqrt()   sqrt(16)  =4 negative not acceptable 
+cbrt()   cbrt(27)  => 3 negative acceptable
+random()  0-.99999
+pow(x,y)  => x to the y  pow(2,3) => 2*2*2 =>8
+log(10) it is used to find logarithm value given value base on e. 
+etc.
+
+Math.random() // 0,.5,    .999999  
+
+alert(Math.random())
+
+12.7  =>
+1.1  floor  1
+1.1  ceil  2
+1.9  ceil  2
+1.8  ceil  2
+1.1  ceil  2
+1.3  round  1
+1.4  round  1
+1.6  round  2
+1.5  round  2
+
+
+3.6   ceil  4 floor  3 round 4
+
+
+Math.random()  =>0  -.99999
+Math.random()*10  =>0  - 9.99999   =>5.45 
+Math.floor(Math.random()*10)
+Math.floor(Math.random()*10)  =>0  - 9   =>5 
+Math.random()  => 0 -.999 =>
+Math.random()*11  => 0 -.999 =>0 - 10.89
+Math.floor(Math.random()*11) =>0 - 10
+============================
+Math.random()*50  => 0   =49.95
+Math.floor(Math.random()*50)  => 0   =49
+Math.floor(Math.random()*50)  => 0   =49
+
+Math.random() => 0 - .99
+Math.random()*10 => 0 - 9.9999Math
+Math.floor(Math.random()*10) => 0 - 9
+Math.floor(Math.random()*10)+5 => 5 -14
+=============================
+floor()
+======
+=>floor function i used to return lowest integer value of given decimal value.
+
+x=12.543434
+Math.floor(x) //12
+
+
+var str="Techpile"  str[8]//undefined
+var str="Techpile"  str[3]//h
+
+===============================
+trim()
+=====
+=>trim function is used to remove both side white space.
+
+var str=" techpile "
+var str1="techpile"
+str==str1=> false
+
+var str=str.trim()  =>" techpile " =>"techpile"
+
+str==str1  => true
+==============================
+
+"30"==30  =>true  
+"30"===30 =>false 
+
+================ 
+addEventListener()
+================
+=>it is used to add event to the selected HTML element.
+=>it does not override old event.
+
+var element=document.querySelector("button")
+
+element.addEventListener(Event,functionName,useCapture)
+
+Event =>click,mouseover,dblclick 
+function=>
+useCapture (optional) => bubbling => false  By default 
+			capturing   =>true
+var element=document.querySelector("button")
+element.addEventListener("click",demo)
+
+function demo()
+{
+alert("ok")
+}
+
+contextmenu
+============
+contextmenu event executed when user right click on window.
+
+preventDefault()
+================
+=>preventDefault method is used to prevent(stop) default action.
+
+event.preventDefault()
+
+
+window.addEventListener("contextmenu",function(){
+alert("Sorry ! right click disabled here..")
+event.preventDefault()
+})
+
+copy event
+===========
+copy event executed when user select copy option  with keyboard/mouse.
+
+window.addEventListener("copy",function(){
+alert("OK")
+})
+
+cut event
+===========
+cut event executed when user select cut option  with keyboard/mouse.
+
+window.addEventListener("cut",function(){
+alert("OK")
+})
+
+
+
+
+function demo(x,y)
+{
+var res=x+y
+alert(res)
+}
+==========================
+String in JS
+===========================
+=>In JavaScript string is collection character enclosed with single or double or backtique.
+
+"RAM"
+'RAM'
+`RAM`
+
+Functions of String in JavaScript
+=================================
+slice
+=====
+=>slice function is used return a part of string based on start and end index.
+=>Here negative index is acceptable.
+Syntax
+=======
+var str="TECHPILE TECHNOLOGY"
+str.slice(startIndex,endIndex)  //not encluding endIndex
+Exa:  
+str.slice(2,5)//CHP  length=end-start 3
+str.slice(0,10)//TECHPILE T length=end-start 3
+str.slice(-10,-5)//TECHN -5-(-10)  //5
+str.slice(-10)//TECHNOLOGY
+str.slice(2)//CHPILE TECHNOLOGY
+
+str.substring(start,end)// TECH
+str.substring(0,4)// TECH
+str.substr(start,length)
+str.substr(1,5) starts from 1 index and cut 5 char
+
+substring
+==========
+=>substring function is used return a part of string based on start and end index.
+=>Here negative index is not acceptable.
+Syntax
+======
+var str="TECHPILE TECHNOLOGY"
+str.substring(startIndex,endIndex)
+str.substring(2,5)//CHP  length=end-start 3
+str.substring(0,10)//TECHPILE T length=end-start 3
+str.substring(2)//CHPILE TECHNOLOGY
+
+
+substr
+=======
+ssubstr function is used to return a part of string of given string based on start and length.
+
+Syntax
+=======
+string.substr(startIndex,length)
+
+startIndex can be negative but length can't possible.
+
+var str="MOHAN"
+alert(str.substr(1,3))//OHA
+alert(str.substring(1,3))//OH
+alert(str.slice(1,3))//OH
+
+
+substring
+substr
+
+
+charAt - chatAt function is used to return character at specified index..
+       ->Index can not be -ve or greater than or equal to length of string.
+	<script>   
+var str="TECHPILE TECHNOLOGY"
+alert(str[5])//I
+alert(str[6])//L
+alert(str.charAt(1))//T
+alert(str.charAt(str.length-1))
+</script>
+
+charCodeAt:- It is used to return Unicode (ASCII)value at specifiedindex..
+************* 
+var str="ABCabc0123"
+ alert(str.charAt(3))
+ alert(str.charAt(8))
+ alert(str.charCodeAt(str.length))
+ 
+         <script>
+
+var str="ABCabc0123"
+ alert(str.charAt(3))
+ alert(str.charAt(8))
+ alert(str.charCodeAt(str.length))
+
+</script>
+
+indexOf 
+--------
+-> This functionis used to return index of first occurenceof character
+in a string..
+-> It returns -1 if character is not present in a string..
+syntax:-
+ var str="Sneha Chauhan"
+ document.write(str.indexOf("C"))
+ document.write("</br>")
+ document.write(str.indexOf("V"))
+ document.write("</br>")
+ document.write(str.indexOf("s"))
+ document.write("</br>")
+ document.write(str.indexOf("n"))
+ 
+ example:-
+ <script>
+    var str="TECHPILE TECHNOLOGY"
+     document.write(str.chatAt(0))
+       document.write(str.indexOf("C"))
+         </script>
+
+lastIndexOf:- 
+------------
+->This function is used to return index of last occurence of character
+in a string..
+-> It reurn -1 if characteris not present in the given string..
+
+   var str="MALAYALAM"
+   alert(str.lastIndexOf("A"))   
+   alert(str.lastIndexOf("M"))   
+   alert(str.lastIndexOf("Y"))  
+     <something_differ>
+	 var str="abc.hciyugq.jpg"
+	 var str="abc.hcifhw.mp3"
+	 var str="abc.rrucan.mp4"
+	 var str="abc.ioadq.png
+	 </something_differ>
+	 
+Search:-
+--------
+    -> It is used to return index of first occurence of regular expression   
+	 in string..
+    ->By default it searches in case-sensitive mode..
+	->if we want search case-insensitive mode then we have to use i 
+      flag with regular-expression..
+    ->It returns -1 if regular-expression is not present in string..
+	
+	 var str="TECHPILET"
+	 alert(str.indexOf("T"))//0
+	 alert(str.indexOf("t"))//-1
+	 alert(str.search("T"))//0
+	 alert(str.search("t"))//-1
+	 alert(str.search(/t/))// case-sensitive //-1
+	 alert(str.search(/t/i))// case-insensitive//0
+	 
+   
+toUpperCase
+toLowerCase
+trim
+trimStart
+trimEnd
+padStart
+padEnd
+replace
+replaceAll
+concat
+match
+include
+split
+etc.
+
+ASCII VALUE OF CHARACTER // UNICODE VALUE ASCII stands for American Standard
+Code for Information interchange...
+A-Z => 65-90
+a-z => 97-122
+space => 32
+0-9 => 48-57
+=======================
+ var str="ABCabc0123"
+ alert(str.charAt(3))
+ alert(str.charAt(8))
+ alert(str.charCodeAt(length-4))
+ 
+
